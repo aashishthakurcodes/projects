@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.navbar-toggle {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.toggle-icon {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-icon:before,
+.toggle-icon:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-icon:before {
+  transform: translateY(-7px);
+}
+
+.toggle-icon:after {
+  transform: translateY(7px);
+}
+
+.navbar-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+.navbar-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-menu {
+    display: flex;
+    position: static;
+    background-color: transparent;
+  }
+
+  .navbar-menu ul {
+    display: flex;
+  }
+}
+
+</style>
+<body>
+    <button class="navbar-toggle" aria-label="Toggle Navigation">
+        <span class="toggle-icon"></span>
+      </button>
+      <nav class="navbar-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      
+      
+</body>
+<script>
+const navbarToggle = document.querySelector('.navbar-toggle');
+const navbarMenu = document.querySelector('.navbar-menu');
+
+navbarToggle.addEventListener('click', () => {
+  navbarMenu.classList.toggle('active');
+  navbarToggle.querySelector('.toggle-icon').classList.toggle('active');
+});
+
+
+
+  
+</script>
+</html>
