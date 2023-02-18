@@ -63,6 +63,7 @@ img{
    .togglebtn{
     display: flex;
    }
+   
    ul{
     display: flex;
     justify-content: center;

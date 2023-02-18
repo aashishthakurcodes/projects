@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    border: 5px solid red;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#navul{
+    display: flex;
+    list-style: none;
+    gap: 70px;
+    border: 5px solid blue;
+    justify-content: center;
+    color: black;
+    cursor: pointer;
+}
+
+.togglebtn {
+    display: none;
+}
+
+/* Section 2  */
+
+.sec2main{
+  border: 3px solid red;
+  display: flex;
+justify-content: space-around;
+}
+.sec2right{
+  border: 3px solid blue;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  
+}
+.table{
+  display: flex;
+  border: 5px solid greenyellow;
+  gap: 5px;
+}
+.table1{
+  /* padding: 10px; */
+  border: 2px solid red;
+  height: 250px;
+  width: 250px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.table2{
+  /* padding: 10px; */
+  border: 2px solid red;
+  height: 250px;
+  width: 250px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.sec2left,img{
+  clip-path: polygon(20% 0%, 80% 0%, 99% 0, 100% 80%, 80% 100%, 0 100%, 0% 80%, 0% 20%);
+}
+span{
+  color: rgb(149, 151, 153);
+}
+.heading2{
+text-align: center;
+/* font-size: 45px; */
+}
+/* Mobile responsive */
+
+@media screen and (max-width:450px){
+    #navul{
+        display: none;
+       }
+       .togglebtn{
+        display: flex;
+       }
+       .resume{
+        display: none;
+       }
+       ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 30px;
+       }
+       .sec2main{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+       }
+       .sec2left img{
+        margin: 20px;
+        width: 180px;
+        height: 200px;
+        border-radius: 50px;
+       }
+       .table{
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 20px;
+       }
+}
