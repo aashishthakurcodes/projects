@@ -36,3 +36,17 @@ btn.addEventListener('click',function(){
     
 })
 // toggledata.removeChild(newdiv)
+
+
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+//   autoplay:{
+//     delay:2500
+//   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

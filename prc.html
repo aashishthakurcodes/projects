@@ -1,129 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<style>
-.container{
-  width:100%;
-  height: 110vh;
-  background: #212020;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.skills h2{
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin-top: 40px;
-  margin-bottom: 5px;
-  color: #ffff;
-}
-.progress-bar{
-  background: #4f4e4e;
-  width: 600px;
-  height: 10px;
-  border-radius: 5px;
-}
-.progress-bar div{
-  height: 10px;
-  border-radius: 5px;
-  width: 0%;
-  /* background: red; */
-}
-.progress-bar div span{
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background: #fff;
-  float: right;
-  margin-top: -15px;
-  margin-right:-20px;
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-}
-.HTML{
-  background-color: red;
-  animation: HTML 3s linear forwards ;
-}
-.CSS{
-  background: blue;
-  animation: CSS 3s linear forwards
-}
-.JavaScript{
-  background: greenyellow;
-  animation: JavaScript 3s linear forwards;
-}
-.React{
-  background: skyblue;
-  animation: React 3s linear forwards;
-}
-.HTML span{
-  border: 2px solid gray;
-}
-.CSS span{
-  border: 2px solid #ffeb3b;
-}
-.React span{
-  border: 2px solid green;
-}
-.JavaScript span{
-  border: pink;
-}
-@keyframes HTML{
-  100%{
-    width: 81%;
-  }
-} 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
 
-@keyframes CSS{
-  100%{
-    width: 78%;
-  }
-} 
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
 
-@keyframes JavaScript{
-  100%{
-    width: 76%;
-  }
-} 
-@keyframes React{
-  100%{
-    width: 67%;
-  }
-} 
-</style>
-<body>
-<section>
-  <div class="container">
-   <div class="skills">
-    <h2>HTML</h2>
-    <div class="progress-bar">
-     <div class="HTML"><span>81%</span></div>
-    </div>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
 
-    <h2>React</h2>
-    <div class="progress-bar">
-     <div class="React"><span>67%</span></div>
-    </div>
+    .swiper-slide {
+      text-align: center;
+      font-size: 16px;
+      background: #0b0b0b;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      height: 350px;
+      padding: 5px;
+      border-radius: 30px;
+      
+    }
 
-    <h2>JavaScript </h2>
-    <div class="progress-bar">
-     <div class="JavaScript"><span>76%</span></div>
-    </div>
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+    }
 
-    <h2>CSS</h2>
-    <div class="progress-bar">
-     <div class="CSS"><span>78%</span></div>
-    </div>
-   </div>
-  </div>
-</section>
-  
-</body>
+    figure {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+    #logo {
+      border: 2px solid rgb(236, 236, 240);
+      border-radius: 50%;
+    }
+  </style>
+  <body>
+    <section>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slider1 -->
+          <div class="swiper-slide">
+            <div class="container">
+              <p>
+                <q
+                  >Ho khenda aa na jeena chir saada time ni ohdo chaae haathi lang jaye jadon saada timee aagya putt pattan nhi hilan dinde.</q
+                >
+              </p>
+              <div class="img-text">
+                <figure>
+                  <img
+                    id="logo"
+                    style="width: 100px; height: 100px"
+                    src="./About/img/Sidhu-moose-wala-32.jpg"
+                    alt=""
+                  />
+                  <h2>Siddu <span style="color: red;">Moose Wala</span></h2>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- Slider 2 -->
+          <div class="swiper-slide">
+            <div class="container">
+              <p>
+                <q
+                  >Tahion Rhonda saariya nuh gall ikko kheinda, Love me or hate me menu fark ni penda, Love me or hate me menu fark ni penda</q
+                >
+              </p>
+              <div class="img-text">
+                <figure>
+                  <img
+                    id="logo"
+                    style="width: 100px; height: 100px"
+                    src="./About/img/Sidhu-Moose-Wala-55.jpeg"
+                    alt=""
+                  />
+                  <h2>Siddu <span style="color: red;">Moose Wala</span></h2>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- Slider 3 -->
+          <div class="swiper-slide">
+            <div class="container">
+              <p>
+                <q
+                  >Jo Kehanda geeta kedhyaan ch kinni aa tu jaaan vekh lain ho bacha bcaha, jihte kare maan vekh lai ve tu udd de lafafe asmaan vekh ke aaha moose pindo, chadehya toofan dekh lai.</q
+                >
+              </p>
+              <div class="img-text">
+                <figure>
+                  <img
+                    id="logo"
+                    style="width: 100px; height: 100px"
+                    src="./About/img/Sidhu-Moose-Wala-photo-2021-4.jpg"
+                    alt=""
+                  />
+                  <h2>Siddu <span style="color: red;">Moose Wala</span></h2>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- Slider 4 -->
+          <div class="swiper-slide">
+            <div class="container">
+              <p>
+                <q
+                  >Those that were putting me down in my struggle period <br>Now my good time is here and I have them leaning over</q
+                >
+              </p>
+              <div class="img-text">
+                <figure>
+                  <img
+                    id="logo"
+                    style="width: 100px; height: 100px"
+                    src="./About/img/Sidhu-Moose-wala-Photos-20204.jpg"
+                    alt=""
+                  />
+                  <h2>Siddu <span style="color: red;">Moose Wala</span></h2>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- Slider 5 -->
+          <div class="swiper-slide">
+            <div class="container">
+              <p>
+                <q
+                  >Its not easy to beat me baby,
+                  I never learned to cheat,
+                  These kids think they can compete with me just by picking up pens,
+                  If you guys think you can win the game,
+                  I am standing on the top and you will pull me down,
+                  Its out of your limit</q
+                >
+              </p>
+              <div class="img-text">
+                <figure>
+                  <img
+                    id="logo"
+                    style="width: 100px; height: 100px"
+                    src="./About/img/Sidhu-Moosewala-Photos-65.jpeg"
+                    alt=""
+                  />
+                  <h2>Siddu <span style="color: red;">Moose Wala</span></h2>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- Slider 6 -->
+          <div class="swiper-slide">
+            <div class="container">
+              <p>
+                <q
+                  >The ones who comment behind my back
+                  And F*ckers call me brother on my face
+                  I don’t give a damn, I don’t give a damn.</q
+                >
+              </p>
+              <div class="img-text">
+                <figure>
+                  <img
+                    id="logo"
+                    style="width: 100px; height: 100px"
+                    src="./About/img/Sidhu-Moosewala-Photos-78.jpg"
+                    alt=""
+                  />
+                  <h2>Siddu <span style="color: red;">Moose Wala</span></h2>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- Slider 7 -->
+          
+
+          <div class="swiper-slide">
+            <div class="container">
+              <p>
+                <q
+                  >I am one man army  I have no bond with others, I am signed to God  I have not come into this world to become a good person  I have been designed to break the goons 
+
+            </q
+                >
+              </p>
+              <div class="img-text">
+                <figure>
+                  <img
+                    id="logo"
+                    style="width: 100px; height: 100px"
+                    src="./About/img/wlf_logo-2-removebg-preview.png"
+                    alt=""
+                  />
+                  <h2>Siddu <span style="color: red;">Moose Wala</span></h2>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- Slider 8 -->
+          <div class="swiper-slide">
+            <div class="container">
+              <p>
+                <q
+                  >The work which I have done till now has become a record  My motives are beyond your thoughts  On which sins I am walking you can judge me rom here  Every role model has died with my gun</q
+                >
+              </p>
+              <div class="img-text">
+                <figure>
+                  <img
+                    id="logo"
+                    style="width: 100px; height: 100px"
+                    src="./About/img/Sidhu-moose-wala-32.jpg"
+                    alt=""
+                  />
+                  <h2>Siddu <span style="color: red;">Moose Wala</span></h2>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        // autoplay:{
+        //   delay:2500
+        // },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
 </html>
