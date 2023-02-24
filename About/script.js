@@ -40,11 +40,11 @@ btn.addEventListener('click',function(){
 
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 20,
-//   autoplay:{
-//     delay:2500
-//   },
+  autoplay:{
+    delay:3000
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
