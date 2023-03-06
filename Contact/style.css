@@ -66,13 +66,16 @@ img{
     flex-direction: column;
     gap: 30px;
 }
-#input1,#input2{
-    width: 250px;
-    padding: 10px;
+.inputs{
+    border: 2px solid greenyellow;
+    display: flex; 
+    justify-content: space-around;
 }
-#input3{
-    width: 500px;
+input{
+    height: 40px;
+    width: 230px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 
@@ -124,11 +127,19 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 350px;
 }
-
-   #input1,#input2,#input3{
-    width: 120px;
-    padding: 4px;
+ input{
+    width: 100%;
+ }
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+textarea{
+    width: 300px;
+    border-radius: 10px;
 }
   
 }
