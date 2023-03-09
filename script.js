@@ -5,12 +5,27 @@ const newdiv=document.createElement("div");
 newdiv.setAttribute('class','newdivdata')
 
 const ul1=document.createElement("ul");
+ul1.setAttribute("class","ul1")
+
 const l1=document.createElement("li");
-l1.innerHTML="Home"
+const anchor=document.createElement("a");
+anchor.innerHTML = 'Home';
+anchor.href = '/';
+l1.appendChild(anchor)
+
+
 const l2=document.createElement("li");
-l2.innerHTML="Contact Us"
+const anchor2=document.createElement("a");
+anchor2.innerHTML = 'About';
+anchor2.href = './About/index.html';
+l1.appendChild(anchor2);
+
+
 const l3=document.createElement("li");
-l3.innerHTML="More"
+const anchor3=document.createElement("a");
+anchor3.innerHTML = 'Contact';
+anchor3.href = './Contact/index.html';
+l1.appendChild(anchor3)
 
 
 ul1.appendChild(l1);

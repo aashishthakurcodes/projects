@@ -12,6 +12,7 @@
     rel="stylesheet"
   />
   <body>
+    <div class="newcontainer">
     <div class="main">
       <!-- Section 1 start -->
       <nav id="navbar">
@@ -24,9 +25,9 @@
           />
         </div>
         <ul id="navul">
-          <li><a href="/"> Home</a></li>
-          <li><a href="./About/index.html">About</a></li>
-          <li><a href="./Contact/index.html">Contact</a></li>
+          <li id="list-item"><a href="/"> Home</a></li>
+          <li  id="list-item"><a href="./About/index.html">About</a></li>
+          <li  id="list-item"><a href="./Contact/index.html">Contact</a></li>
         </ul>
 
         <div class="resume">
@@ -57,12 +58,14 @@
       <section>
         <div class="container">
           <div class="left">
+            <div class="data">
             <h1>Hello , I am a <span style="color: #19B5FE;">Web Developer</span></h1>
             <p>I am an aspiring Full Stack Javascript Developer</p>
             <p>Who is currently working as a freelancer for</p>
             <p>National and International clients</p>
             <li>Web Developer</li>
             <li>Programmer</li>
+          </div>
             <div class="svg">
               <a href="http://www.instagram.com/">
                 <svg
@@ -107,21 +110,29 @@
                   />
                 </svg>
               </a>
+              
             </div>
+            
           </div>
 
           <div class="right">
-            <img width="400px" height="400px" src="./img/peakpx.jpg" alt="" />
+            <img  width="400px" height="400px" src="./img/peakpx.jpg" alt="" />
           </div>
         </div>
       </section>
       <!-- Section 2 End here -->
 
       <footer>
-        <p>© Copyright Kelly. All Rights Reserved
-          Designed by Aashish</p>
+        <div class="footermain">
+          <div>
+            <h3>© Copyright Kelly. All Rights Reserved</h3>
+            <h4>Designed by Aashish 
+            </h4>
+          </div>
+        </div>
       </footer>
     </div>
+  </div>
   </body>
   <script src="./script.js"></script>
 </html>
