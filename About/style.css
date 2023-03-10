@@ -5,23 +5,62 @@
 }
 nav{
     display: flex;
-    border: 5px solid red;
+    border: 2px dashed rgb(252, 248, 248);
     justify-content: space-around;
     align-items: center;
+    background: #000;
     
 }
 #navul{
     display: flex;
     list-style: none;
     gap: 70px;
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
     justify-content: center;
     color: black;
     cursor: pointer;
 }
+li>a{
+  color: rgb(249, 255, 240);
+  font-family:"Roboto Slab" ;
+  font-weight: 600;
+  text-decoration: none;
+}
+li>a:hover{
+  color:#19B5FE;
+  text-decoration: underline 2px solid#F22613;  
+}
+#navul li:hover{
+  transform: scale(1.2);
+}
 
 .togglebtn {
     display: none;
+}
+
+.btn_resume{
+  padding: 8px 18px;
+  font-family: "Roboto Slab";
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  background: #19B5FE;
+  color: #ffff;
+  cursor: pointer; 
+}
+.btn_resume a{
+  color: #ffff;
+  text-decoration: none;
+}
+
+.btn_resume:hover{
+  background: #e6eaec;
+  color: #010101;
+  transform: scale(1.1)
+}
+ a:hover{
+  color:#19B5FE;
+  text-decoration: none;
 }
 
 /* Section 2  */
@@ -29,25 +68,29 @@ nav{
 .sec2main{
   border: 3px solid red;
   display: flex;
-justify-content: space-around;
+justify-content:center;
+padding: 10px;
+background: #000000;
 }
 .sec2right{
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 10px;
   
   
 }
 .table{
   display: flex;
-  border: 5px solid greenyellow;
-  gap: 5px;
+  /* border: 5px solid greenyellow; */
+  gap: 10px;
 }
 .table1{
   /* padding: 10px; */
-  border: 2px solid red;
+  border: 2px dashed rgb(253, 247, 247);
+  border-radius: 20px;
   height: 250px;
   width: 250px;
   padding: 8px;
@@ -57,7 +100,8 @@ justify-content: space-around;
 }
 .table2{
   /* padding: 10px; */
-  border: 2px solid red;
+  border: 2px dashed rgb(254, 251, 251);
+  border-radius: 20px;
   height: 250px;
   width: 250px;
   padding: 10px;
@@ -65,33 +109,70 @@ justify-content: space-around;
   flex-direction: column;
   justify-content: space-around;
 }
+.table1:hover{
+  border: 3px dashed rgb(71, 245, 8);
+  transform: scale(0.9);
+  cursor: pointer;
+}
+.table2:hover{
+  border: 3px dashed rgb(71, 245, 8);
+  transform: scale(0.9);
+  cursor: pointer;
+}
 .sec2left,img{
   clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+ 
+}
+#aboutimg{
+  border: 5px solid rgb(251, 251, 250); 
+}
+#aboutimg:hover{
+  border: 5px solid rgb(1, 250, 18); 
 }
 span{
-  color: rgb(149, 151, 153);
+  color: #FF6666;
 }
+
 .heading2{
 text-align: center;
+font-family: "Raleway";
 /* font-size: 45px; */
+color: #e6eaec;
+}
+h3{
+  color: #f9fbfc;
+  font-family: "Raleway";
 }
 
 /* Section 3 */
 
 .container{
   width:100%;
-  height: 110vh;
-  background: #212020;
+  height: 100vh;
+  background: #eae4e4;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(./img/squares.png);
+  
+}
+.skills{
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 1.2);
+  box-shadow: 10px 20px 14px 1px rgba(8,8,8,1);
+ 
+  
 }
 .skills h2{
   font-weight: 400;
   letter-spacing: 1px;
   margin-top: 40px;
   margin-bottom: 5px;
-  color: #ffff;
+  color: #ede5e5;
+  font-family:"Raleway";
+  
 }
 .progress-bar{
   background: #4f4e4e;
@@ -104,6 +185,7 @@ text-align: center;
   border-radius: 5px;
   width: 0%;
   /* background: red; */
+  
 }
 .progress-bar div span{
   height: 30px;
@@ -120,19 +202,19 @@ text-align: center;
 }
 .HTML{
   background-color: red;
-  animation: HTML 4s linear forwards ;
+  animation: HTML 6s linear forwards ;
 }
 .CSS{
   background: blue;
-  animation: CSS 4s linear forwards
+  animation: CSS 6s linear forwards
 }
 .JavaScript{
   background: greenyellow;
-  animation: JavaScript 4s linear forwards;
+  animation: JavaScript 6s linear forwards;
 }
 .React{
   background: skyblue;
-  animation: React 4s linear forwards;
+  animation: React 6s linear forwards;
 }
 .HTML span{
   border: 2px solid gray;
@@ -179,16 +261,17 @@ text-align: center;
 .swiper-slide {
   text-align: center;
   font-size: 16px;
-  background: #0b0b0b;
+  background: #070707;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 5px;
-  border-radius: 30px;
-  border: 2px solid red;
+  border: 2px solid rgb(226, 222, 225);
   width: 500px;
+  
+
   
 }
 
@@ -224,15 +307,26 @@ body {
 }
 .swipermain{
   height: 500px;
-  border: 2px solid blue;
+  border: 2px solid rgb(5, 230, 46);
   display: flex;
   align-items: center;
-  background: #4a4949;
+ /* background-image: url(./img/3d-render-grunge-room-with-smoky-atmosphere-spotlight.jpg);
+ background-size: cover;
+ background-repeat: no-repeat; */
+ 
+}
+q{
+  font-family: "Fira code";
+}
+h2{
+  font-family: "Roboto Slab";
 }
 .swipeheader{
   text-align: center;
   font-size: 45px;
-  background: #4a4949;
+  background: #020202;
+  color: #e6eaec;
+  font-family: "Fira code";
 }
 /* Section 5 */
 .footermain{
