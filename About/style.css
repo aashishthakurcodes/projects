@@ -66,7 +66,7 @@ li>a:hover{
 /* Section 2  */
 
 .sec2main{
-  border: 3px solid red;
+  /* border: 3px solid red; */
   display: flex;
 justify-content:center;
 padding: 10px;

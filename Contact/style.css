@@ -25,12 +25,7 @@ nav{
 }
 
 
-.container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-}
+
 img{
     border-radius: 50%;
 }
@@ -48,6 +43,8 @@ img{
 .Sec2_main div{
     border: 2px solid rgb(0, 30, 255);
    place-items: center;
+   display: flex;
+   flex-direction: column;
 }
 /* Section 3 */
 .form{
@@ -59,7 +56,7 @@ img{
     align-items: center;
 }
 .mainform{
-    border: 2px solid blue;
+    border: 2px solid rgb(225, 255, 0);
     width: 50%;
     padding: 50px;
     display: flex;
