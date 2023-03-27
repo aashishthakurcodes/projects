@@ -18,14 +18,14 @@ const l2=document.createElement("li");
 const anchor2=document.createElement("a");
 anchor2.innerHTML = 'About';
 anchor2.href = './About/index.html';
-l1.appendChild(anchor2);
+l2.appendChild(anchor2);
 
 
 const l3=document.createElement("li");
 const anchor3=document.createElement("a");
 anchor3.innerHTML = 'Contact';
 anchor3.href = './Contact/index.html';
-l1.appendChild(anchor3)
+l3.appendChild(anchor3)
 
 
 ul1.appendChild(l1);
