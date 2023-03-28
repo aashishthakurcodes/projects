@@ -39,7 +39,8 @@ img{
     margin: 10px 50px;
     text-align: center;
     height: auto;
-    border: 5px solid red;
+    padding: 10px;
+    border: 5px solid rgb(0, 38, 255);
 }
 .Sec2_main div{
     border: 2px solid rgb(0, 30, 255);

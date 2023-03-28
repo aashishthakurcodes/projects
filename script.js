@@ -51,3 +51,16 @@ btn.addEventListener('click',function(){
     
 })
 // toggledata.removeChild(newdiv)
+
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  autoplay:{
+    delay:3000
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
