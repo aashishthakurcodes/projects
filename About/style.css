@@ -54,14 +54,12 @@ li>a:hover{
 }
 
 .btn_resume:hover{
-  background: #e6eaec;
-  color: #010101;
-  transform: scale(1.1)
+  background: #000;
+  border: 1px solid #ffff;
+  color: #ffff;
+  transform: scale(0.9);
 }
- a:hover{
-  color:#19B5FE;
-  text-decoration: none;
-}
+
 
 /* Section 2  */
 

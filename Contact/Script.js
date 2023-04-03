@@ -24,7 +24,7 @@ l2.appendChild(anchor2);
 const l3=document.createElement("li");
 const anchor3=document.createElement("a");
 anchor3.innerHTML = 'Contact';
-anchor3.href = './Contact/index.html';
+anchor3.href = '/';
 l3.appendChild(anchor3)
 
 

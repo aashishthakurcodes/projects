@@ -17,7 +17,7 @@ l1.appendChild(anchor)
 const l2=document.createElement("li");
 const anchor2=document.createElement("a");
 anchor2.innerHTML = 'About';
-anchor2.href = './About/index.html';
+anchor2.href = '../About/index.html';
 l1.appendChild(anchor2);
 
 

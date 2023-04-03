@@ -3,9 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    background: #010101;
+}
 nav{
     display: flex;
-    border: 5px solid red;
+    border: 2px dashed rgb(252, 248, 248);
     justify-content: space-around;
     align-items: center;
     
@@ -14,11 +17,23 @@ nav{
     display: flex;
     list-style: none;
     gap: 70px;
-    border: 5px solid blue;
     justify-content: center;
     color: black;
     cursor: pointer;
 }
+li>a{
+    color: rgb(249, 255, 240);
+    font-family:"Roboto Slab" ;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  li>a:hover{
+    color:#19B5FE;
+    text-decoration: underline 2px solid#F22613;  
+  }
+  #navul li:hover{
+    transform: scale(1.2);
+  }
 
 .togglebtn {
     display: none;
@@ -29,8 +44,25 @@ nav{
 img{
     border-radius: 50%;
 }
+.btn_resume{
+  padding: 8px 18px;
+  font-family: "Roboto Slab";
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  background: #19B5FE;
+  color: #ffff;
+  cursor: pointer; 
+}
+.btn_resume:hover{
+    background: #000;
+    border: 1px solid #ffff;
+    color: #ffff;
+    transform: scale(0.9);
+}
 
 /* Section 2 */
+
 .parent{
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -39,11 +71,12 @@ img{
     text-align: center;
     height: auto;
     padding: 10px;
-    border: 5px solid rgb(0, 38, 255);
+    /* border: 5px solid rgb(0, 38, 255); */
     background: #010101;
+    
 }
 .box{
-    border: 2px solid rgb(0, 30, 255);
+    /* border: 2px solid rgb(0, 30, 255); */
    place-items: center;
    display: flex;
    height: 100px;
@@ -73,7 +106,7 @@ img{
     background: #2D2D2D;
    
 }
-.data h2{
+.data h3{
     color:#8B8B8B;
     font-family: "Roboto Slab";
 }
@@ -82,39 +115,76 @@ img{
 }
 
 .box-data{
-    border: 3px solid green;
+    /* border: 3px solid green; */
     padding: 5px 10px;
 }
 svg{
     fill: rgb(255, 255, 255);
+    height: 30px;
 }
 /* Section 3 */
 .form{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    background: #010101;
 }
 .mainform{
-    border: 2px solid rgb(225, 255, 0);
+    /* border: 2px solid rgb(225, 255, 0); */
     width: 50%;
     /* padding: 50px; */
     display: flex;
     flex-direction: column;
     gap: 30px;
+    background: #0e0d0d;
+    padding: 20px 0px;
+    
 }
 .inputs{
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     display: flex; 
     justify-content: space-around;
+    padding: 10px 0px;
 }
 input{
     height: 40px;
     width: 230px;
     padding: 10px;
     border-radius: 10px;
+    /* background: #151515; */
+    background: #272727;
+    color: #dcd3d3;
+    font-family: "Raleway";
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+textarea{
+    width: 85%;
+    margin: auto;
+    background: #272727;
+    color: rgb(136, 138, 139);
+}
+#subject{
+    width: 85%;
+}
+.submit{
+    padding: 8px 28px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+}
+.submit:hover{
+    background: #000;
+    color: #ffff;
+    cursor: pointer;
+    border: 1px solid #ffff;
+    transform: scale(0.9);
 }
 
 
@@ -180,33 +250,36 @@ input{
     /* margin: auto; */
 }
 .mainform{
-    border: 2px solid rgb(225, 255, 0);
+    border: 2px solid rgb(255, 255, 254);
     width: 100%;
     margin: auto;
+    padding: 10px;
+    /* border: 2px solid red; */
 }
- input{
-    width: 100%;
-    margin: auto;
- }
+
 .inputs{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    border: 2px solid green;
-    width: 300px;
+    /* border: 3px solid greenyellow; */
     margin: auto;
-}
-#cars{
-    width: 300px;
-    height: 30px;
-}
-textarea{
     width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 280px;
+}
+/*  */
+textarea{
+    margin: auto;
+    width: 82%;
     border-radius: 10px;
+    /* border: 3px solid red; */
 }
 .submit{
     padding: 8px 20px;
-    background: greenyellow;
+    background: rgb(47, 231, 255);
     color: rgb(8, 8, 8);
     border: none;
     font-weight: bolder;
