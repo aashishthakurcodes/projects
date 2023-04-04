@@ -319,6 +319,20 @@ textarea{
     text-decoration: underline;
   }
 
+  .newdivdata{
+    background: red;
+    height: 40px;
+    text-align: center;
+    
+  }
+  .ul1 li{
+    padding: 8px 0px;
+    display: flex;
+    justify-content: space-around; 
+  }
+  #navbtn{
+    cursor: pointer;
+  }
  
 }
 

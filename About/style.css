@@ -386,15 +386,10 @@ h2{
         /* flex-direction: column; */
         justify-content: center;
         align-items: center;
-       
         height:400px ;
-       
        }
        .swiper-slide{
-      
         border: 4px solid yellow;
-        
-      
        }
        .swiper{
        display: block;
@@ -406,6 +401,26 @@ h2{
        .swiper {
         width: 80%;
         height: 80%;
+      }
+      q{
+        font-size: 14px;
+      }
+      #navbtn{
+        cursor: pointer;
+      }
+      .newdivdata{
+        background: red;
+        height: 40px;
+        text-align: center;
+       
+
+        
+      }
+      .ul1 li{
+        padding: 8px 0px;
+        display: flex;
+        justify-content: space-around;
+        
       }
       
     

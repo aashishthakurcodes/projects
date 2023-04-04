@@ -10,7 +10,7 @@ ul1.setAttribute("class","ul1")
 const l1=document.createElement("li");
 const anchor=document.createElement("a");
 anchor.innerHTML = 'Home';
-anchor.href = '/';
+anchor.href = '';
 l1.appendChild(anchor)
 
 
@@ -24,7 +24,7 @@ l1.appendChild(anchor2);
 const l3=document.createElement("li");
 const anchor3=document.createElement("a");
 anchor3.innerHTML = 'Contact';
-anchor3.href = './Contact/index.html';
+anchor3.href = '../Contact/index.html';
 l1.appendChild(anchor3)
 
 
@@ -53,14 +53,3 @@ btn.addEventListener('click',function(){
 // toggledata.removeChild(newdiv)
 
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  autoplay:{
-    delay:3000
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});

@@ -10,21 +10,21 @@ ul1.setAttribute("class","ul1")
 const l1=document.createElement("li");
 const anchor=document.createElement("a");
 anchor.innerHTML = 'Home';
-anchor.href = '/';
+anchor.href = '../Home/index.html';
 l1.appendChild(anchor)
 
 
 const l2=document.createElement("li");
 const anchor2=document.createElement("a");
 anchor2.innerHTML = 'About';
-anchor2.href = './About/index.html';
+anchor2.href = '../About/index.html';
 l2.appendChild(anchor2);
 
 
 const l3=document.createElement("li");
 const anchor3=document.createElement("a");
 anchor3.innerHTML = 'Contact';
-anchor3.href = '/';
+anchor3.href = ' ';
 l3.appendChild(anchor3)
 
 
@@ -50,4 +50,3 @@ btn.addEventListener('click',function(){
     }
     
 })
-// toggledata.removeChild(newdiv)
