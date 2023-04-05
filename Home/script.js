@@ -39,10 +39,9 @@ console.log(newdiv);
 const toggledata=document.getElementById("toggledata");
 btn.addEventListener('click',function(){
     if(toggledata.style.display === 'none'){
-        toggledata.append(newdiv)
+        toggledata.appendChild(newdiv)
         toggledata.style.display ='block';
-        // console.log("if block");
-        // x.append(toggledata
+        
     }
     else{
         toggledata.style.display ='none';
