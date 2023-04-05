@@ -418,6 +418,7 @@ h2{
         padding: 8px 0px;
         display: flex;
         justify-content: space-around;
+        width: 100%;
         
       }
       
