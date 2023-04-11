@@ -140,14 +140,14 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 2px solid rgb(0, 255, 221);
+    /* border: 2px solid rgb(0, 255, 221); */
     gap: 20px;
     
 
    }
    .left{
     width: 80%;
-    border: 9px solid rgb(245, 4, 173);
+    /* border: 9px solid rgb(245, 4, 173); */
     height: fit-content;
    }
 
@@ -155,7 +155,7 @@ img{
     display: none;
    }
    .right{
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
    }
    .right img{
     height: 300px;
@@ -191,7 +191,7 @@ img{
     align-items: center;
   }
   .data{
-    border: 2px solid rgb(7, 3, 239);
+    /* border: 2px solid rgb(7, 3, 239); */
     display: flex;
     flex-direction: column;
     padding: 10px 5px;
