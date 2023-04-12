@@ -9,7 +9,8 @@ body{
 nav{
     display: flex;
     border: 2px dashed rgb(252, 248, 248);
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0px 15px;
     align-items: center;
     
 }
@@ -83,7 +84,7 @@ img{
 
 }
 .data{
-    border: 3px solid black;
+    border: 3px solid rgb(207, 205, 205);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -120,7 +121,7 @@ img{
 }
 svg{
     fill: rgb(255, 255, 255);
-    height: 30px;
+    height: 25px;
 }
 /* Section 3 */
 .form{

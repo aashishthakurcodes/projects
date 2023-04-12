@@ -11,9 +11,11 @@
 nav{
     display: flex;
     /* border: 5px solid red; */
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0px 12px;
     align-items: center;
     background: rgba(0, 0, 0, 0.9);
+    /* border: 5px solid red; */
    
 }
 #navul{
@@ -22,6 +24,7 @@ nav{
     gap: 70px;
     justify-content: center;
     cursor: pointer;
+    /* border: 5px solid red; */
 }
 
 .togglebtn {
@@ -130,6 +133,7 @@ img{
     flex-direction: column;
     gap: 10px;
     height: fit-content;
+  
 
   }
 

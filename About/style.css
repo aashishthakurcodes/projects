@@ -6,7 +6,8 @@
 nav{
     display: flex;
     border: 2px dashed rgb(252, 248, 248);
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0px 15px;
     align-items: center;
     background: #000;
     

@@ -11,7 +11,7 @@ btn.addEventListener("click", function () {
     const l1 = document.createElement("li");
     const anchor = document.createElement("a");
     anchor.innerHTML = "Home";
-    anchor.href = "../Home/index.html";
+    anchor.href = "../index.html";
     l1.appendChild(anchor);
     
     const l2 = document.createElement("li");
